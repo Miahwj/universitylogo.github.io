@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Mia_Button_Practice
+        </title>
+        <style>
+            body{
+                font-family: 'Nunito', sans-serif;
+                text-align: center;
+            }
+            h1{
+                text-transform: uppercase;
+                text-align: center;
+                margin-top: 20vh;
+                margin-bottom: 5vh;
+            }
+            .b{
+                color: #E7484F;
+            }
+            .u{
+                color: #F68B1D;
+            }
+            .t1{
+                color: #FCED00;
+            }
+            .t2{
+                color: #009E4F;
+            }
+            .u{
+                color: #00AAC3;
+            }
+            .n{
+                color: #732982;
+            }
+            div{
+                text-transform: capitalize;
+            }
+            .button1,.button2{
+                /*text style*/
+                font-size: medium;
+                font-weight: normal;
+                color: #fff;
+                text-decoration: none;
+                /*box style*/
+                background-color: #343A40;
+                border-radius: 4px;
+                padding: 8px 16px;
+            }
+            .button1:hover{
+                /*background & animation*/
+                background-image: linear-gradient(
+                    to right,
+                    #00C0FF 0%,
+                    #FFCF00 50%,
+                    #FC4F4F 80%,
+                    #00C0FF 100%);
+                animation: rainbow1 2s linear infinite;
+            }
+            @keyframes rainbow1 {
+                from{background-position: 0vw;}
+                to{background-position: 20vw;}
+            }
+            .button2:hover{
+                /*background & animation*/
+                background-image: linear-gradient(
+                    to bottom,
+                    #00C0FF 0%,
+                    #FFCF00 50%,
+                    #FC4F4F 80%,
+                    #00C0FF 100%);
+                animation: rainbow2 2s linear infinite;
+            }
+            @keyframes rainbow2 {
+                from{background-position: 0 0vh;}
+                to{background-position: 0 20vh;}
+            }
+            .button3{
+                /*text style*/
+                font-size: medium;
+                font-weight: normal;
+                color: #fff;
+                text-decoration: none;
+                /*box style*/
+                background-color: #343A40;
+                border-radius: 4px;
+                padding: 8px 16px;
+                /*transition attributes*/
+                transition: border 0s, background-color 2s, color 2s;
+            }
+            .button3:hover{
+                background-color: white;
+                border: dashed 2px;
+                border-color: #00C0FF #FFCF00 #FC4F4F #732982;
+                color: #343A40;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            <span class="b">b</span><span class="u">u</span><span class="t1">t</span><span class="t2">t</span><span class="u">o</span><span class="n">n</span>
+            practice
+        </h1>
+        <div>
+            <a class="button1" href="https://www.w3schools.com/" title="weschools" target="_blank">click me!</a>
+            <a class="button2" href="https://developer.mozilla.org/en-US/" title="MDN" target="_blank">click me!</a>
+            <a class="button3" href="https://github.com/" title="Github" target="_blank">click me!</a>
+        </div>
+    </body>
+</html>
